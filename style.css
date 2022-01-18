@@ -1,0 +1,23 @@
+.namber{
+  height: 30px;
+  width: 50px;
+  margin-top: 5px;
+  border-radius: 6px;
+}
+
+.option{
+  height: 30px;
+  width: 105px;
+  margin-top: 5px;
+  border-radius: 6px;
+}
+
+#answer{
+  background-color: black;
+  color: white;
+  padding-right: 10px;
+  width: 205px;
+  height: 30px;
+  text-align: right;
+  font-size: 20px;
+}
