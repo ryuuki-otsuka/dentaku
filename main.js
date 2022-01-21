@@ -1,24 +1,31 @@
 function push(enter) {
   let answer = document.getElementById("answer")
-  let enter_namber = enter.innerHTML;
+  let enter_number = enter.innerHTML;
   
   
   
-  if (enter_namber == "AC") {
+  if (enter_number == "AC") {
     answer.innerHTML = "0"
-  }else if(enter_namber == "=") {
+  }else if(enter_number == "=") {
     answer.innerHTML = eval(answer.innerHTML)
   } else{
     if (answer.innerHTML == "0") {
-      answer.innerHTML = enter_namber
-    }else {
-      answer.innerHTML += enter_namber
+      answer.innerHTML = enter_number
+      }else{
+       answer.innerHTML += enter_number
+      }
     }
   }
-  if(enter_namber.slice(-1) == "+" || "-" || "*" || "/"){
-   let enz = enter_number.slice(-1);
-   enz = enter_namber
-   answer.HTML = enz
- }
-}
- 
+  
+  
+  function huu (enter) {
+    let answer = document.getElementById("answer")
+    let enter_number = enter.innerHTML;
+    answer.innerHTML += enter_number
+    if(answer.innerHTML.slice(-1) == "+" || answer.innerHTML.slice(-1) == "-" || answer.innerHTML.slice(-1) == "*" || answer.innerHTML.slice(-1) == "/"){
+      console.log("大丈夫");
+        answer.innerHTML.slice(0, -1);
+   }else{
+     console.log("大丈夫でない");
+   }
+  }
